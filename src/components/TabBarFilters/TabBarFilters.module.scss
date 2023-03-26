@@ -1,0 +1,47 @@
+@import "../../constans/constants.scss";
+
+.filters{
+  display: flex;
+  border: 1px solid $border-color;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  &__block{
+    position: relative;
+    min-width: 168px;
+    height : 50px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 15px;
+    background: $white-color;
+    transition: all 0.2s ease-in;
+    &::after{
+      content: '';
+      position: absolute;
+      display: flex;
+      right : 0;
+      top : 0;
+      height: 100%;
+      width: 1px;
+      background-color: $border-color;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+    &Selected{
+      transition: all 0.15s ease-in;
+      color: $white-color;
+      background: $checked-color;
+    }
+
+  }
+}
+
+@media (max-width: $mobile-width){
+  .filters{
+    display: block;
+    width: 100%;
+  }
+}

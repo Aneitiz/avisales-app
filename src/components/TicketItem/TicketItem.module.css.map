@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../constans/constants.scss","TicketItem.module.scss"],"names":[],"mappings":"AAAQ;ACCR;EACE;EACA;EACA;EACA;EACA,kBDDY;ECEZ;EACA;;AACA;EACC;EACC;EACA;;AAEF;EACE,ODbY;ECcZ;EACA;EACA;EACA;;AAEF;EACE;EACA;;AAIF;EACE;EACA;EACA;;AAEF;EACI,OD1BiB","file":"TicketItem.module.css"}

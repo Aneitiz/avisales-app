@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap');
+@import "../../constans/constants.scss";
+html{
+  height: 100%;
+}
+body{
+  min-height: 100%;
+}
+#root{
+  min-height: 100%;
+}
+.main{
+  display: flex;
+  width: 100%;
+  min-height: 900px;
+  flex-direction: column;
+  align-items: center;
+  background-color:$main-background-color;
+  padding-top: 50px;
+}
+
+.container{
+  display: flex;
+}
+
+@media (max-width : $mobile-width){
+  .container{
+    width: 100%;
+    display: block;
+  }
+}

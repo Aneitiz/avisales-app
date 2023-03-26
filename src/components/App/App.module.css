@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap");
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+#root {
+  min-height: 100%;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  min-height: 900px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E5E5E5;
+  padding-top: 50px;
+}
+
+.container {
+  display: flex;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    width: 100%;
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=App.module.css.map */

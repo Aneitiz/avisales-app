@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap");
+.ticket {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1019607843);
+  border: 1px solid #DFE5EC;
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.ticket__header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.ticket__price {
+  color: #2196F3;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+}
+.ticket__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.ticket__info-paragraph {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.ticket__info-title {
+  color: #A0B0B9;
+}
+
+/*# sourceMappingURL=TicketItem.module.css.map */

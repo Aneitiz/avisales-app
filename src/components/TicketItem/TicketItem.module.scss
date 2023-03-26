@@ -1,0 +1,36 @@
+@import "../../constans/constants.scss";
+.ticket {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px 0 #0000001A;
+  border : 1px solid $border-color;
+  background-color: $white-color;
+  padding: 20px;
+  margin-bottom: 20px;
+  &__header{
+   display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  &__price{
+    color: $checked-color;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+  }
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info{
+  }
+  &__info-paragraph{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  &__info-title{
+      color: $tickets-title-color;
+  }
+}

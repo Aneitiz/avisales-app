@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap");
+.aside {
+  margin-right: 20px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1019607843);
+  border-radius: 5px;
+  max-height: 252px;
+  padding-bottom: 20px;
+}
+.aside__label {
+  display: block;
+  padding: 5px 20px 5px 20px;
+}
+.aside__label:hover {
+  background-color: #F1FCFF;
+}
+.aside__title {
+  padding: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #4A4A4A;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.aside__filters {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1023px) {
+  .aside {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .aside__label {
+    padding: 2.5px 10px 2.5px 10px;
+  }
+  .aside__title {
+    margin-bottom: 10px;
+  }
+}
+
+/*# sourceMappingURL=SideBarFilters.module.css.map */
