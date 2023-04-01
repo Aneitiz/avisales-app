@@ -36,6 +36,7 @@ export const sortSideFilters = (filter: SortSideFilter, tickets: Ticket[] | unde
       if (
         (stopsTo === filters.all ||
           stopsTo === filters.nonStop ||
+          stopsTo === filters.oneTransfer ||
           stopsTo === filters.twoTransfers ||
           stopsTo === filters.threeTransfers) &&
         (stopsBack === filters.nonStop ||

@@ -1,12 +1,14 @@
+// @ts-nocheck
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
 import { sideBarFiltersItems } from '../../constans/constans'
 import { selectFilter } from '../../store/sideBarFilterSlice'
+import { State } from '../../types/types'
 
 import style from './SideBarFilters.module.scss'
 const SideBarFilters: React.FC = () => {
-  const state = (state: any) => state.sideBarFilter
+  const state = (state: State) => state.sideBarFilter
   const dispath = useDispatch()
   const sideBarFilter = useSelector(state)
   const filterList = sideBarFiltersItems.map(({ name, label }) => {

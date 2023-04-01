@@ -10,16 +10,16 @@ const TabBarFilters = () => {
   const dispath = useDispatch()
   const state = (state: State) => state.tabBarFilter
   const tabBarFilter = useSelector(state)
-  const TabBarList = TabBarFilterItems.map((element: any) => {
+  const TabBarList = TabBarFilterItems.map(({ label, name }) => {
     let selectedTab = tabBarFilter.currentTab
     return (
       // eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions,jsx-a11y/click-events-have-key-events
       <li
-        className={`${style.filters__block} ${selectedTab === element.name ? style.filters__blockSelected : ''}`}
-        key={element.name}
-        onClick={() => dispath(selectTab(element.name))}
+        className={`${style.filters__block} ${selectedTab === name ? style.filters__blockSelected : ''}`}
+        key={name}
+        onClick={() => dispath(selectTab(name))}
       >
-        {element.label}
+        {label}
       </li>
     )
   })

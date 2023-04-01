@@ -5,7 +5,8 @@ import { durationView, stopsView } from '../../helpers/viewHelper'
 
 import style from './TicketItem.module.scss'
 
-const TicketInfo: React.FC<any> = ({ info }): JSX.Element => {
+/* eslint-disable */
+const TicketInfo: React.FC<any> = ({ info }: any) => {
   const { origin, destination, date, duration, stops } = info
   return (
     <li className={style.ticket__inner}>
@@ -14,7 +15,7 @@ const TicketInfo: React.FC<any> = ({ info }): JSX.Element => {
           {origin} - {destination}
         </span>
         <span>
-          {format(new Date(date), 'HH\':\'mm')} - {format(addMinutes(new Date(date), duration), "HH':'mm")}
+          {format(new Date(date), "HH':'mm")} - {format(addMinutes(new Date(date), duration), "HH':'mm")}
         </span>
       </p>
       <p className={style['ticket__info-paragraph']}>

@@ -3,8 +3,8 @@ import React from 'react'
 import TicketInfo from './TicketInfo'
 import style from './TicketItem.module.scss'
 
-const TicketItem: React.FC<any> = ({ ticketItems }: any) => {
-  const { price, carrier, segments } = ticketItems
+const TicketItem: React.FC<any> = ({ info }: any) => {
+  const { price, carrier, segments } = info
   const [to, back] = segments
   const ticketLogo = `//pics.avs.io/99/36/${carrier}.png`
   return (

@@ -1,21 +1,8 @@
 export type Segments = [
   {
-    origin: string
-
-    destination: string
-
     date: string
-
-    stops: string[]
-
-    duration: number
-  },
-  {
-    origin: string
-
     destination: string
-
-    date: string
+    origin: string
 
     stops: string[]
 
@@ -23,7 +10,6 @@ export type Segments = [
   }
 ]
 export interface Ticket {
-  map(arg0: (item: any) => void): unknown
   price: number
 
   carrier: string
