@@ -41,7 +41,6 @@ const TicketList: React.FC = () => {
       })
       .catch(() => ErrorNotification())
   }, [])
-
   useEffect(() => {
     if (errorStartData) {
       return

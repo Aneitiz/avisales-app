@@ -1,11 +1,12 @@
-@import "../../constans/constants.scss";
-.ticket-list{
+@import '../../constans/constants.scss';
+.ticket-list {
   width: 100%;
-  &__button{
+  &__button {
     color: $white-color;
     width: 100%;
     height: 50px;
-    background:$checked-color;
+    background: $checked-color;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
